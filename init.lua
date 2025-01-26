@@ -105,7 +105,7 @@ vim.keymap.set('n', '<C-k>', '<C-w><C-k>', { desc = 'Move focus to the upper win
 
 vim.keymap.set('n', '<leader>tt', ':term<CR>', { desc = 'Open [T]erminal' })
 vim.keymap.set('n', '<leader>ts', ':split | :term<CR>', { desc = '[S]plit and Open [T]erminal' })
-vim.keymap.set('n', '<leader>tv', ':vsplit | :term<CR>', { desc = '[V]ertical split and open [T]erminal' })
+vim.keymap.set('n', '<leader>tv', ':vsplit | :term<CR>', { desc = '[V]ertical split and Open [T]erminal' })
 
 -- [[ Basic Autocommands ]]
 --  See `:help lua-guide-autocommands`
@@ -628,7 +628,7 @@ require('lazy').setup({
           lsp_format_opt = 'fallback'
         end
         return {
-          timeout_ms = 500,
+          timeout_ms = 2500,
           lsp_format = lsp_format_opt,
         }
       end,
